@@ -10,10 +10,10 @@ import UIKit
 class MainViewController: UITableViewController {
     
     let groups: [CheclistGroup] = [
-        CheclistGroup(title: "Birthdays", imageName: "birthdaypic"),
-        CheclistGroup(title: "Groceries", imageName: "groceriespic"),
-        CheclistGroup(title: "To Do", imageName: "todopic"),
-        CheclistGroup(title: "Business Stuff", imageName: "pic")
+        CheclistGroup(title: "Birthdays", imageName: "Birthdays"),
+        CheclistGroup(title: "Groceries", imageName: "Groceries"),
+        CheclistGroup(title: "To Do", imageName: "Drinks"),
+        CheclistGroup(title: "Business Stuff", imageName: "Inbox")
     ]
     
     override func viewDidLoad() {
@@ -28,9 +28,13 @@ class MainViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let group: CheclistGroup = groups[indexPath.row]
-        let cell = UITableViewCell()
-        cell.textLabel?.text = group.title
+        let group = groups[indexPath.row]
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell" , for: indexPath) as! GroupTableViewCell
+        
+        cell.titleLabel.text = group.title
+        cell.iconView.image = UIImage(named: group.imageName)
         return cell
         
     }
