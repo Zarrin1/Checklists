@@ -18,6 +18,10 @@
 		528EDEDA2812CE120009D0FD /* ChecklistsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EDED92812CE120009D0FD /* ChecklistsItem.swift */; };
 		528EDEDD2812DEA20009D0FD /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EDEDC2812DEA20009D0FD /* ItemsTableViewCell.swift */; };
 		5295386F280D92F400044A59 /* ChecklistGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295386E280D92F400044A59 /* ChecklistGroup.swift */; };
+		52F7A5A32816CFA20097277C /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A5A22816CFA20097277C /* SwitchTableViewCell.swift */; };
+		52F7A5A62816CFCB0097277C /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A5A52816CFCB0097277C /* TextFieldTableViewCell.swift */; };
+		52F7A5A92816CFF10097277C /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A5A82816CFF10097277C /* DateTableViewCell.swift */; };
+		52F7A5AC2816D04A0097277C /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A5AB2816D04A0097277C /* AddItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +32,16 @@
 		5227A70228099D3400C74E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5227A70528099D3400C74E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5227A70728099D3400C74E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		524907E9281031EE00D95939 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Checklists.app; path = "/Users/macbookpro/Desktop/ios-kurs/Checklists/build/Debug-iphoneos/Checklists.app"; sourceTree = "<absolute>"; };
 		524907EF28103AE600D95939 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		528EDED62812CBF40009D0FD /* GroupDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsTableViewController.swift; sourceTree = "<group>"; };
 		528EDED92812CE120009D0FD /* ChecklistsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistsItem.swift; sourceTree = "<group>"; };
 		528EDEDC2812DEA20009D0FD /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
 		5295386E280D92F400044A59 /* ChecklistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistGroup.swift; sourceTree = "<group>"; };
+		52F7A5A02816C8630097277C /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Checklists.app; path = "/Users/macbookpro/Desktop/ios-kurs/Checklists/build/Debug-iphoneos/Checklists.app"; sourceTree = "<absolute>"; };
+		52F7A5A22816CFA20097277C /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		52F7A5A52816CFCB0097277C /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		52F7A5A82816CFF10097277C /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		52F7A5AB2816D04A0097277C /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,9 @@
 			children = (
 				524907EF28103AE600D95939 /* GroupTableViewCell.swift */,
 				528EDEDC2812DEA20009D0FD /* ItemsTableViewCell.swift */,
+				52F7A5A22816CFA20097277C /* SwitchTableViewCell.swift */,
+				52F7A5A52816CFCB0097277C /* TextFieldTableViewCell.swift */,
+				52F7A5A82816CFF10097277C /* DateTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -84,6 +95,7 @@
 			children = (
 				5227A6FD28099D3100C74E66 /* MainViewController.swift */,
 				528EDED62812CBF40009D0FD /* GroupDetailsTableViewController.swift */,
+				52F7A5AB2816D04A0097277C /* AddItemTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,7 +126,7 @@
 			);
 			name = Checklists;
 			productName = Checklists;
-			productReference = 524907E9281031EE00D95939 /* Checklists.app */;
+			productReference = 52F7A5A02816C8630097277C /* Checklists.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,9 +184,13 @@
 				5227A6FE28099D3100C74E66 /* MainViewController.swift in Sources */,
 				528EDED72812CBF40009D0FD /* GroupDetailsTableViewController.swift in Sources */,
 				5227A6FA28099D3100C74E66 /* AppDelegate.swift in Sources */,
+				52F7A5A32816CFA20097277C /* SwitchTableViewCell.swift in Sources */,
 				528EDEDA2812CE120009D0FD /* ChecklistsItem.swift in Sources */,
 				5295386F280D92F400044A59 /* ChecklistGroup.swift in Sources */,
+				52F7A5AC2816D04A0097277C /* AddItemTableViewController.swift in Sources */,
 				5227A6FC28099D3100C74E66 /* SceneDelegate.swift in Sources */,
+				52F7A5A92816CFF10097277C /* DateTableViewCell.swift in Sources */,
+				52F7A5A62816CFCB0097277C /* TextFieldTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
