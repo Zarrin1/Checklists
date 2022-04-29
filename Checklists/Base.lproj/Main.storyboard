@@ -47,6 +47,7 @@
                                     <outlet property="iconView" destination="dKL-AE-Rhu" id="snf-Cd-7CK"/>
                                     <outlet property="subtitleLabel" destination="1Jq-tB-cH0" id="dO2-Rg-j6l"/>
                                     <outlet property="titleLabel" destination="OfB-BT-QaE" id="eob-ye-CWm"/>
+                                    <segue destination="D3p-SQ-af8" kind="show" identifier="MailToGroupDetails" id="Vw9-cP-Nge"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="522.89719626168221" y="143.84449244060477"/>
         </scene>
-        <!--Group Details Table View Controller-->
+        <!--Birthday-->
         <scene sceneID="iad-1z-nma">
             <objects>
                 <tableViewController id="D3p-SQ-af8" customClass="GroupDetailsTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,6 +94,7 @@
                                 <connections>
                                     <outlet property="checkmarkIcon" destination="uLi-5q-zH5" id="rkw-6w-BgY"/>
                                     <outlet property="itemTitle" destination="dQp-mv-2SO" id="JtG-hL-4cj"/>
+                                    <segue destination="Cka-2o-4zM" kind="show" identifier="GroupDetalsToItemDetales" id="5Sd-pu-KMO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -101,7 +103,7 @@
                             <outlet property="delegate" destination="D3p-SQ-af8" id="HTj-Tx-64i"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="faQ-KX-drz"/>
+                    <navigationItem key="navigationItem" title="Birthday" largeTitleDisplayMode="never" id="faQ-KX-drz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de6-vp-PyG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +125,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="428" height="50.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDQ-DU-sJ1">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDQ-DU-sJ1">
                                             <rect key="frame" x="16" y="8" width="396" height="34.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>

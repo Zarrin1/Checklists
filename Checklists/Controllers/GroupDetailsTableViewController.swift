@@ -12,14 +12,7 @@ import UIKit
 // 2. 
 
 class GroupDetailsTableViewController: UITableViewController {
-    var items: [ChecklistsItem] = [
-        ChecklistsItem(isChecked: true, name: "Walk the dog"),
-        ChecklistsItem(isChecked: true, name: "Brush teeth"),
-        ChecklistsItem(isChecked: false, name: "Learn iOS Development"),
-        ChecklistsItem(isChecked: false, name: "Soccer praclice"),
-        ChecklistsItem(isChecked: true, name: "Eat ice cream"),
-        ChecklistsItem(isChecked: false, name: "Dance in the rain")
-    ]
+    var items: [ChecklistsItem] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

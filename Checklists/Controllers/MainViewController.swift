@@ -10,10 +10,19 @@ import UIKit
 class MainViewController: UITableViewController {
     
     let groups: [CheclistGroup] = [
-        CheclistGroup(title: "Birthdays", imageName: "Birthdays"),
-        CheclistGroup(title: "Groceries", imageName: "Groceries"),
-        CheclistGroup(title: "To Do", imageName: "Drinks"),
-        CheclistGroup(title: "Business Stuff", imageName: "Inbox")
+        CheclistGroup(title: "Birthdays", imageName: "Birthdays", items: [
+            ChecklistsItem(isChecked: true, name: "День рождение 24 марта")
+                        ]),
+        
+        CheclistGroup(title: "Groceries", imageName: "Groceries", items: [
+            ChecklistsItem(isChecked: false, name: "Tree")
+        ]),
+        CheclistGroup(title: "To Do", imageName: "Drinks", items: [
+            ChecklistsItem(isChecked: true, name: "Inbox")
+        ]),
+        CheclistGroup(title: "Business Stuff", imageName: "Inbox", items: [
+            ChecklistsItem(isChecked: false, name: "Business")
+    ])
     ]
     
     override func viewDidLoad() {
@@ -38,5 +47,18 @@ class MainViewController: UITableViewController {
         return cell
         
     }
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MailToGroupDetails" {
+            print ("Transfer information")
+            if let vc = segue.destination as?
+                GroupDetailsTableViewController {
+                if let index = tableView.indexPathForSelectedRow {
+                    if let indexPath = tableView.indexPathForSelectedRow {
+                        vc.items = groups[indexPath.row].items
+                }
+            }
+        }
+    }
+}
 }
 
