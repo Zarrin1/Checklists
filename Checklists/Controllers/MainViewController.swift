@@ -48,12 +48,14 @@ class MainViewController: UITableViewController {
         
     }
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
         if segue.identifier == "MailToGroupDetails" {
             print ("Transfer information")
             if let vc = segue.destination as?
                 GroupDetailsTableViewController {
                 if let index = tableView.indexPathForSelectedRow {
                     if let indexPath = tableView.indexPathForSelectedRow {
+                        vc.title = groups[indexPath.row].title
                         vc.items = groups[indexPath.row].items
                 }
             }

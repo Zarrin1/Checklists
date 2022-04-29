@@ -103,13 +103,19 @@
                             <outlet property="delegate" destination="D3p-SQ-af8" id="HTj-Tx-64i"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Birthday" largeTitleDisplayMode="never" id="faQ-KX-drz"/>
+                    <navigationItem key="navigationItem" title="Birthday" largeTitleDisplayMode="never" id="faQ-KX-drz">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="j6r-Jd-b7z">
+                            <connections>
+                                <segue destination="Cka-2o-4zM" kind="show" id="ck1-Nj-cBl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de6-vp-PyG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1286.9158878504672" y="143.84449244060477"/>
         </scene>
-        <!--Add Item Table View Controller-->
+        <!--Add item-->
         <scene sceneID="PUw-qe-Rd2">
             <objects>
                 <viewController id="Cka-2o-4zM" customClass="AddItemTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -138,6 +144,9 @@
                                         <constraint firstItem="GDQ-DU-sJ1" firstAttribute="top" secondItem="KaL-28-jtc" secondAttribute="top" constant="8" id="tNN-Am-nXd"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addItemTextField" destination="GDQ-DU-sJ1" id="m9g-yT-avA"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="v9o-6c-yRI" customClass="SwitchTableViewCell" customModule="Checklists" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="78.333332061767578" width="428" height="47.333332061767578"/>
@@ -200,12 +209,13 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="calendarPicker" destination="lZl-82-n3v" id="uJm-6f-h6u"/>
                                     <outlet property="dateLable" destination="kDO-NW-oJa" id="Vg4-nR-Jdu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8JI-px-VgR"/>
+                    <navigationItem key="navigationItem" title="Add item" id="8JI-px-VgR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6f-hB-jnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,9 +240,13 @@
             <point key="canvasLocation" x="-377.10280373831773" y="143.84449244060477"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ck1-Nj-cBl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Birthdays" width="36" height="36"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
