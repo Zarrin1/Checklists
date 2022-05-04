@@ -11,17 +11,17 @@ class MainViewController: UITableViewController {
     
     let groups: [CheclistGroup] = [
         CheclistGroup(title: "Birthdays", imageName: "Birthdays", items: [
-            ChecklistsItem(isChecked: true, name: "День рождение 24 марта")
+            ChecklistsItem(isChecked: true, name: "День рождение 24 марта", remainMe: false)
                         ]),
         
         CheclistGroup(title: "Groceries", imageName: "Groceries", items: [
-            ChecklistsItem(isChecked: false, name: "Tree")
+            ChecklistsItem(isChecked: false, name: "Tree", remainMe: false)
         ]),
         CheclistGroup(title: "To Do", imageName: "Drinks", items: [
-            ChecklistsItem(isChecked: true, name: "Inbox")
+            ChecklistsItem(isChecked: true, name: "Inbox", remainMe: false)
         ]),
         CheclistGroup(title: "Business Stuff", imageName: "Inbox", items: [
-            ChecklistsItem(isChecked: false, name: "Business")
+            ChecklistsItem(isChecked: false, name: "Business", remainMe: false)
     ])
     ]
     
@@ -53,11 +53,9 @@ class MainViewController: UITableViewController {
             print ("Transfer information")
             if let vc = segue.destination as?
                 GroupDetailsTableViewController {
-                if let index = tableView.indexPathForSelectedRow {
-                    if let indexPath = tableView.indexPathForSelectedRow {
+                if let indexPath = tableView.indexPathForSelectedRow {
                         vc.title = groups[indexPath.row].title
                         vc.items = groups[indexPath.row].items
-                }
             }
         }
     }

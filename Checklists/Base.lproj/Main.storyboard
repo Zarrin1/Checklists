@@ -163,6 +163,9 @@
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWR-lg-fh8">
                                             <rect key="frame" x="363" y="7.9999999999999982" width="51" height="31.333333333333329"/>
+                                            <connections>
+                                                <action selector="switchDidChange:" destination="v9o-6c-yRI" eventType="valueChanged" id="xTb-ha-iSb"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                     <constraints>
@@ -175,8 +178,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="remindSitch" destination="KWR-lg-fh8" id="cwD-BT-Iru"/>
-                                    <outlet property="textLable" destination="lb1-is-Tox" id="gbg-Zw-2tN"/>
+                                    <outlet property="remainSwitch" destination="KWR-lg-fh8" id="cwD-BT-Iru"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" id="VYV-J9-rOz" customClass="DateTableViewCell" customModule="Checklists" customModuleProvider="target">

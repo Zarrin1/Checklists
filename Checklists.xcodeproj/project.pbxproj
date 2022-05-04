@@ -37,7 +37,7 @@
 		528EDED92812CE120009D0FD /* ChecklistsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistsItem.swift; sourceTree = "<group>"; };
 		528EDEDC2812DEA20009D0FD /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
 		5295386E280D92F400044A59 /* ChecklistGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistGroup.swift; sourceTree = "<group>"; };
-		52F7A5A02816C8630097277C /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Checklists.app; path = "/Users/macbookpro/Desktop/ios-kurs/Checklists/build/Debug-iphoneos/Checklists.app"; sourceTree = "<absolute>"; };
+		52A026572822930B002A8B90 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7A5A22816CFA20097277C /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		52F7A5A52816CFCB0097277C /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		52F7A5A82816CFF10097277C /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
@@ -59,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5227A6F828099D3100C74E66 /* Checklists */,
+				52A026572822930B002A8B90 /* Checklists.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +127,7 @@
 			);
 			name = Checklists;
 			productName = Checklists;
-			productReference = 52F7A5A02816C8630097277C /* Checklists.app */;
+			productReference = 52A026572822930B002A8B90 /* Checklists.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
